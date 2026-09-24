@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPlatform</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container-formulario">
+        <div class="content-formulario">
+            <h1>Dev<span>Platform</span></h1>
+            <p>Ingresa tus credenciales para acceder al panel de control</p>
+            <form action="/dashboard.html" class="formulario">
+                <label for="correo">Correo Electrónico *</label>
+                <input type="email"  id="correo" name="correo" required placeholder="ejemplo@sena.edu.co">
+                <label for="contraseña">Contraseña *</label>
+                <input type="password"  id="contraseña" required placeholder="Contraseña" minlength="6" >
+                <label for="rol">Rol de Desarrollador *</label>
+                
+                <select id="rol" name="rol">
+                        <option value="opcion">Seleccione una opción</option>
+                        <option value="frontend">Desarrollador Frontend</option>
+                        <option value="backend">Desarrollador Backend</option>
+                        <option value="fullstack">Desarrollador Fullstack</option>
+                </select>
+                <div>
+                <input type="checkbox" id="confirmar" required>
+                <label for="confirmar">Aceptos los terminos de servicio y politicas de privacidad</label>
+                </div>
+                <button type="submit">Ingresar al dashboard</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
